@@ -11,8 +11,9 @@ func main() {
 	passXor := xorTest()
 	passImplication := implicationTest()
 	passAnd := andTest()
+	passNot := notTest()
 
-	if passOr && passEqual && passXor && passImplication && passAnd {
+	if passOr && passEqual && passXor && passImplication && passAnd && passNot {
 		fmt.Println("Yay you win!")
 	} else {
 		fmt.Println("Dun goofed...")
@@ -219,3 +220,12 @@ func notTest() bool {
 	return false
 
 }
+
+// // 7. Using only AND and OR, make NOT (might be impossible)
+// func notImpossible(one bool, two bool) bool {
+
+// }
+
+// func notImpossibleTest() bool {
+
+// }
